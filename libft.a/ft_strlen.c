@@ -6,9 +6,11 @@
 /*   By: bgursoy <bgursoy@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 16:41:12 by bgursoy           #+#    #+#             */
-/*   Updated: 2022/12/07 10:31:50 by bgursoy          ###   ########.fr       */
+/*   Updated: 2022/12/12 19:28:34 by bgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

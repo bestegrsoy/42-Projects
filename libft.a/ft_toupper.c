@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgursoy <bgursoy@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 16:24:25 by bgursoy           #+#    #+#             */
-/*   Updated: 2022/12/13 13:02:24 by bgursoy          ###   ########.fr       */
+/*   Created: 2022/12/12 17:49:55 by bgursoy           #+#    #+#             */
+/*   Updated: 2022/12/13 12:21:08 by bgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int	ft_toupper(int c)
 {
-	return (c >= 32 && c <= 126);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
 }
 
 /*int main()
 {
-	printf("%d\n", ft_isprint('b'));
-	printf("%d\n", ft_isprint('1'));
-	printf("%d", ft_isprint('\0'));
+	printf("%c\n", ft_toupper('Z'));
+	printf("%c", ft_toupper('z'));
 }*/

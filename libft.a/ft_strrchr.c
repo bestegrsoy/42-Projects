@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bgursoy <bgursoy@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 16:24:25 by bgursoy           #+#    #+#             */
-/*   Updated: 2022/12/13 13:02:24 by bgursoy          ###   ########.fr       */
+/*   Created: 2022/12/12 17:57:17 by bgursoy           #+#    #+#             */
+/*   Updated: 2022/12/12 18:01:16 by bgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	return (c >= 32 && c <= 126);
-}
+	int			i;
+	const char	*tmp;
 
-/*int main()
-{
-	printf("%d\n", ft_isprint('b'));
-	printf("%d\n", ft_isprint('1'));
-	printf("%d", ft_isprint('\0'));
-}*/
+	tmp = s;
+	i = ft_strlen(s);
+	s = (s + i);
+	while (*s != *tmp && (char)c != *s)
+		s--;
+	if (c == *s)
+		return ((char *)s);
+	return (0);
+}
