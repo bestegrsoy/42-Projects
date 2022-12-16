@@ -6,7 +6,7 @@
 /*   By: bgursoy <bgursoy@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 00:51:28 by bgursoy           #+#    #+#             */
-/*   Updated: 2022/12/16 01:39:41 by bgursoy          ###   ########.fr       */
+/*   Updated: 2022/12/16 11:46:35 by bgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	ft_atoi(char *str)
 	}
 	return (result * sign);
 }
+
 /*#include <stdio.h>
 int main()
 {

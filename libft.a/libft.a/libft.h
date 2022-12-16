@@ -6,7 +6,7 @@
 /*   By: bgursoy <bgursoy@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 10:37:30 by bgursoy           #+#    #+#             */
-/*   Updated: 2022/12/16 01:40:20 by bgursoy          ###   ########.fr       */
+/*   Updated: 2022/12/16 15:06:38 by bgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len); 
 int	ft_atoi(char *str);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif

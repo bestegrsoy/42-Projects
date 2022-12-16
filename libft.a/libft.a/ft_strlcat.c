@@ -6,7 +6,7 @@
 /*   By: bgursoy <bgursoy@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 00:45:56 by bgursoy           #+#    #+#             */
-/*   Updated: 2022/12/13 10:12:20 by bgursoy          ###   ########.fr       */
+/*   Updated: 2022/12/16 12:14:26 by bgursoy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 /*int main()
 {
-	char	dst[] = "Emre";
-	char	src[] = "Akdik";
+	char	dst[] = "Beste";
+	char	src[] = "Gursoy";
 
 	printf ("%p %p", dst, src);
 	printf ("%lu\n", ft_strlcat(dst, src, 30));
